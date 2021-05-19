@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {Header} from './components/Header';
+import SearchBar from './components/SearchBar';
+import background1 from './img/buildingpurple.jpeg'
+import {Footer} from './components/Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-sans" style={{ 
+      backgroundImage: `url(${background1})`,
+      backgroundSize: 'cover',
+      height: '100vh',
+      backgroundPosition: 'center'
+    }}>
+      <Header/>
+      <br/>
+      <SearchBar/>
+      <br/>
+      <Footer/>
     </div>
   );
 }
